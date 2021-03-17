@@ -2,6 +2,8 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="logic.js"></script>
 </head>
 <body>
 <div id="menu">
@@ -20,41 +22,43 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
+<h2><span>About Me</span></h2>
+<div class="aboutMe">
+  <img class="abtImg" src="photos/img10.jpeg" /> <br>
+  Hello, my name is Yakov Friman, I a 90 years old. <br>
+  I live in Beer-Sheva, Israel for the past 31 years.
+  I was born in Minsk, Belarus.<br>
+  My profession was to play a flute. But, the thing I mostly like to do is Photography. <br>
+  My camera is with me every where I go and I would like to show you some of the pictures I took. 
+</div>
 </section>
-
 <section id="photos" class="section">
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
+<h2><span>My Photos</span></h2>
+<div class="row"> 
+  <div class="column">
+    <img src="photos/img.jpg" style="width:100%">
+    <img src="photos/img1.jpg" style="width:100%">
+    <img src="photos/img2.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="photos/img4.jpg" style="width:100%">
+    <img src="photos/img5.jpg" style="width:100%">
+    <img src="photos/img6.jpg" style="width:100%">
+    <img src="photos/img3.jpg" style="width:100%">
+  </div> 
+  <div class="column">
+    <img src="photos/img9.jpeg" style="width:100%">
+    <img src="photos/img7.jpg" style="width:100%">
+    <img src="photos/img8.jpg" style="width:100%">
+    <img src="photos/img11.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="photos/img12.jpg" style="width:100%">
+    <img src="photos/img13.jpeg" style="width:100%">
+  </div>
+</div>
 <br/>
 <br/>
 <br/>
@@ -63,22 +67,9 @@ my photos
 <section id="playlist" class="section">
 <br/>
 <br/>
+<h2><span>My Playlist</span></h2>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/I0kVNMHo6fQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
 <br/>
 </section>
@@ -100,7 +91,7 @@ my playlist
 <br/>
 <br/>
 <br/>
-give me a like
+<h2><span>Give me a like</span></h2>
 <br/>
 <br/>
 <br/>
@@ -123,7 +114,7 @@ give me a like
 <br/>
 <br/>
 <br/>
-scan my code
+<h2><span>Scan my code</span></h2>
 <br/>
 <br/>
 <br/>
@@ -146,33 +137,26 @@ scan my code
 <br/>
 <br/>
 <br/>
-ans
+<h2><span>ans</span></h2>
 <br/>
 <br/>
 <br/>
 </section>
 
 <section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
+<h2><span>Contact Me</span></h2>
+<form action="mailto:yonymilver@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
+  Email:<br>
+  <input type="email"><br><br>
+  Name:<br>
+  <input type="text" size="19" name="ContactName"><br><br>
+  Message:<br>
+  <textarea name="ContactComment" rows="6" cols="20"></textarea><br><br> 
+  <input type="submit" value="Submit">
+</form>
+<!-- <form method="post">
+  <input type="button" value="Send Email" onclick="sendEmail()"/>
+</form> -->
 </section>
 
 
