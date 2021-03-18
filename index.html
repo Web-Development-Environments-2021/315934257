@@ -4,16 +4,27 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="logic.js"></script>
+<script src="https://kit.fontawesome.com/52a021a671.js" crossorigin="anonymous"></script>
+<script src="https://cdn.tiny.cloud/1/js4qdkv0pexyhjjsl8yqgjrcr0r2e28c30xne2qe5sz9gxmy/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+  tinymce.init({
+    selector: "#emailContent",
+    plugins: "emoticons",
+    toolbar: "emoticons",
+    toolbar_location: "bottom",
+    menubar: false
+  });
+</script>
 </head>
 <body>
 <div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
+<li><a href="#about"><i class="fas fa-address-card"></i> About Me</a></li>
+<li><a href="#photos"><i class="fas fa-camera"></i> My Photos</a></li>
+<li><a href="#playlist"><i class="fas fa-music"></i> My Playlist</a></li>
+<li><a href="#like"><i class="fas fa-thumbs-up"></i> Like</a></li>
+<li><a href="#qrcoder"><i class="fas fa-qrcode"></i> QR code</a></li>
+<li><a href="#spa"><i class="far fa-question-circle"></i> Q&A</a></li>
+<li><a href="#contact"><i class="fas fa-envelope"></i> Contact Me</a></li>
 </div>
 		  
 <section id="about" class="section">
@@ -25,11 +36,11 @@
 <h2><span>About Me</span></h2>
 <div class="aboutMe">
   <img class="abtImg" src="photos/img10.jpeg" /> <br>
-  Hello, my name is Yakov Friman, I a 90 years old. <br>
+  Hello, my name is Yakov Friman, I am 90 years old. <br>
   I live in Beer-Sheva, Israel for the past 31 years.
   I was born in Minsk, Belarus.<br>
   My profession was to play a flute. But, the thing I mostly like to do is Photography. <br>
-  My camera is with me every where I go and I would like to show you some of the pictures I took. 
+  My camera is with me every where I go and I would like to show you some of the pictures were taken by me. 
 </div>
 </section>
 <section id="photos" class="section">
@@ -69,75 +80,51 @@
 <br/>
 <h2><span>My Playlist</span></h2>
 <br/>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/I0kVNMHo6fQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4y6PV1jwX9I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
 <br/>
 </section>
 
 <section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <h2><span>Give me a like</span></h2>
-<br/>
-<br/>
-<br/>
+<div class="fb-like" data-href="https://web-development-environments-2021.github.io/assignment1-JonatanMilver/" data-width="20" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
 </section>
 
 <section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <h2><span>Scan my code</span></h2>
-<br/>
-<br/>
-<br/>
+<img src="photos/QRcode.PNG"/>
 </section>
 
 <section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<h2><span>ans</span></h2>
+<h2><span>Q&A</span></h2>
+<table>
+  <tr>
+    <th>web1</th>
+    <th>web2</th>
+    <th>web3</th>
+  </tr>
+  <tr>
+    <td>עסק כולו בתוכן סטטי, לא כלל אינטראקציה בין המשתמשים</td>
+    <td>עוסק בתקשרות דו-כיוונית בין משתמשים דרך רשתות חברתיות, בלוגים, וידאוים, פרסומי תוכן וכו'</td>
+    <td>אין הגדרה חד משמעית, האינטרנט והבינה המלאכותית מספקים תוכן למשתמש לפי המידע שנאסף עליו</td>
+  </tr>
+  <tr>
+    <td>היה שימוש לקריאה בלבד</td>
+    <td>ניתן לקרוא ולכתוב לדפים(לדוגמא ויקיפדיה)</td>
+    <td>מכיל תוכן אישי על המשתמשים, מכיל הגנה על תוכן המשתמשים.</td>
+  </tr>
+  <tr>
+    <td>שימש בעיקר יצירת תוכן של חברות עבור משתמשים</td>
+    <td>משמש ליצירת תוכן של משתמשים עבור משתמשים אחרים ותקשרות בין משתמשים.</td>
+    <td>בנייה ושימוש באפליקציות צלורך תקשורת עם משתמשים אחרים. שימוש באפליקציות לצורך מינוף אישי או של חברה.</td>
+  </tr>
+</table>
+<div class="useCase">
+  <h3>Use case: A sport's shop website would look like:</h5>
+  <h4>Web1 - One page with some information about the shop, opening hours, etc'</h2>
+  <h4>Web2 - The website will have more than one route, pointing to the shop's products. It will also have a link to the shop's Facebook(for example) page</h2>
+  <h4>Web3 - While pressing some product on the website, it will also recommend you more products that can be a good fit for you.</h2>
+</div>
 <br/>
 <br/>
 <br/>
@@ -145,21 +132,23 @@
 
 <section id="contact" class="section">
 <h2><span>Contact Me</span></h2>
-<form action="mailto:yonymilver@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
-  Email:<br>
-  <input type="email"><br><br>
-  Name:<br>
-  <input type="text" size="19" name="ContactName"><br><br>
-  Message:<br>
-  <textarea name="ContactComment" rows="6" cols="20"></textarea><br><br> 
-  <input type="submit" value="Submit">
-</form>
+<div class="form-style-6">
+  <h1>Contact Us</h1>
+  <form method="post" action="mailto:milver@post.bgu.ac.il">
+  <input type="text" name="name" placeholder="Your Name" />
+  <input type="email" name="mail_address" placeholder="Email Address" />
+  <textarea id="emailContent" name="content" placeholder="Type your Message"></textarea>
+  <input type="submit" value="Send" />
+  </form>
+  </div>
 <!-- <form method="post">
   <input type="button" value="Send Email" onclick="sendEmail()"/>
 </form> -->
 </section>
 
 
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="PfUJKw14"></script>
 <script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
