@@ -1,17 +1,18 @@
+
 body{
     font-family: 'Open Sans', sans-serif;
 	background-color: #f5f9fc;
+	margin: 0;
+	padding:0;
 }
 
 #menu
 {
 	list-style-type: none;
-	/* overflow: hidden; */
 	position: fixed;
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	/* height: 35px; */
 	background-color: #979797;
 }
 #menu li {
@@ -73,15 +74,12 @@ h2 {
  .aboutMe {
 	 text-align: center;
 	 padding-top: 10px;
-	 /* position:relative; */
 	 justify-content: center;
  }
 
  .abtImg {
 	 width: 10%;
 	 height: 10%;
-	 /* overflow: hidden;
-	 position:relative; */
  }
 
  section {
@@ -105,17 +103,6 @@ h2 {
 	margin-top: 8px;
 	vertical-align: middle;
   }
-
-  /* textarea {
-	/* width:100%; */
-	resize: vertical;
-	padding:15px;
-	margin: 10px;
-	border-radius:15px;
-	border:0;
-	box-shadow:4px 4px 10px rgba(0,0,0,0.06);
-	height:150px;
-  } */
   
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media (max-width: 800px) {
@@ -135,13 +122,13 @@ h2 {
 
   .form-style-6{
 	font: 95% Arial, Helvetica, sans-serif;
-	max-width: 400px;
+	width:60%;
 	margin: 10px auto;
 	padding: 16px;
 	background: #F7F7F7;
 }
 .form-style-6 h1{
-	background: #43D1AF;
+	background: #6a978d;
 	padding: 20px 0;
 	font-size: 140%;
 	font-weight: 300;
@@ -150,13 +137,7 @@ h2 {
 	margin: -16px -16px 16px -16px;
 }
 .form-style-6 input[type="text"],
-.form-style-6 input[type="date"],
-.form-style-6 input[type="datetime"],
 .form-style-6 input[type="email"],
-.form-style-6 input[type="number"],
-.form-style-6 input[type="search"],
-.form-style-6 input[type="time"],
-.form-style-6 input[type="url"],
 .form-style-6 textarea,
 .form-style-6 select 
 {
@@ -177,19 +158,13 @@ h2 {
 	font: 95% Arial, Helvetica, sans-serif;
 }
 .form-style-6 input[type="text"]:focus,
-.form-style-6 input[type="date"]:focus,
-.form-style-6 input[type="datetime"]:focus,
 .form-style-6 input[type="email"]:focus,
-.form-style-6 input[type="number"]:focus,
-.form-style-6 input[type="search"]:focus,
-.form-style-6 input[type="time"]:focus,
-.form-style-6 input[type="url"]:focus,
 .form-style-6 textarea:focus,
 .form-style-6 select:focus
 {
-	box-shadow: 0 0 5px #43D1AF;
-	padding: 3%;
-	border: 1px solid #43D1AF;
+	box-shadow: 0 0 5px #6a978d;
+	/* padding: 3%; */
+	border: 1px solid #6a978d;
 }
 
 .form-style-6 input[type="submit"],
@@ -199,8 +174,8 @@ h2 {
 	-moz-box-sizing: border-box;
 	width: 100%;
 	padding: 3%;
-	background: #43D1AF;
-	border-bottom: 2px solid #30C29E;
+	background: #6a978d;
+	border-bottom: 2px solid #6a978d;
 	border-top-style: none;
 	border-right-style: none;
 	border-left-style: none;	
@@ -208,6 +183,6 @@ h2 {
 }
 .form-style-6 input[type="submit"]:hover,
 .form-style-6 input[type="button"]:hover{
-	background: #2EBC99;
+	background: #6a978d;
 }
 

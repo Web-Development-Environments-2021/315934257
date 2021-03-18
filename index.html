@@ -5,15 +5,12 @@
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="logic.js"></script>
 <script src="https://kit.fontawesome.com/52a021a671.js" crossorigin="anonymous"></script>
-<script src="https://cdn.tiny.cloud/1/js4qdkv0pexyhjjsl8yqgjrcr0r2e28c30xne2qe5sz9gxmy/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src='inputEmoji.js'></script>
 <script>
-  tinymce.init({
-    selector: "#emailContent",
-    plugins: "emoticons",
-    toolbar: "emoticons",
-    toolbar_location: "bottom",
-    menubar: false
-  });
+  $(function () {
+    $('textarea').emoji({place: 'after'});
+  })
 </script>
 </head>
 <body>
@@ -122,7 +119,7 @@
 <div class="useCase">
   <h3>Use case: A sport's shop website would look like:</h5>
   <h4>Web1 - One page with some information about the shop, opening hours, etc'</h2>
-  <h4>Web2 - The website will have more than one route, pointing to the shop's products. It will also have a link to the shop's Facebook(for example) page</h2>
+  <h4>Web2 - The website will have more than one route, pointing to the shop's products for example. It will also have a link to the shop's social media page page</h2>
   <h4>Web3 - While pressing some product on the website, it will also recommend you more products that can be a good fit for you.</h2>
 </div>
 <br/>
@@ -133,7 +130,7 @@
 <section id="contact" class="section">
 <h2><span>Contact Me</span></h2>
 <div class="form-style-6">
-  <h1>Contact Us</h1>
+  <h1>Send me an Email</h1>
   <form method="post" action="mailto:milver@post.bgu.ac.il">
   <input type="text" name="name" placeholder="Your Name" />
   <input type="email" name="mail_address" placeholder="Email Address" />
