@@ -14,6 +14,7 @@ body{
 	padding: 0;
 	width: 100%;
 	background-color: #979797;
+	z-index: 1;
 }
 #menu li {
 	float: left;
